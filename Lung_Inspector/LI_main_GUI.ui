@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lung_inspector_main</class>
+ <widget class="QMainWindow" name="Lung_inspector_main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lung Inspector</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:gray;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="volume_push">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>77</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:red;
+color:white;
+border-style: outset;
+border-width:2px;
+border-radius:10px;
+border-color:black;
+font:bold 14px;
+padding:6px;
+}
+
+QPushButton:hover {
+background-color:blue;
+}
+QPushButton:pressed{
+background-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Volume Rendering</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fused_push">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>70</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:orange;
+color:white;
+border-style: outset;
+border-width:2px;
+border-radius:10px;
+border-color:black;
+font:bold 14px;
+padding:6px;
+}
+
+QPushButton:hover {
+background-color:blue;
+}
+QPushButton:pressed{
+background-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Fused Visualization</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="surface_push">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>160</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:green;
+color:white;
+border-style: outset;
+border-width:2px;
+border-radius:10px;
+border-color:black;
+font:bold 14px;
+padding:6px;
+}
+
+QPushButton:hover {
+background-color:blue;
+}
+QPushButton:pressed{
+background-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Surface Rendering</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="segment_push">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:blue;
+color:white;
+border-style: outset;
+border-width:2px;
+border-radius:10px;
+border-color:black;
+font:bold 14px;
+padding:6px;
+}
+QPushButton:hover {
+background-color:rgb(50,110,255);
+}
+QPushButton:pressed{
+background-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Segmented file generation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit_main">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>310</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:black;
+color:white;
+border-style: outset;
+border-width:2px;
+border-radius:10px;
+border-color:black;
+font:bold 14px;
+padding:6px;
+}
+
+QPushButton:hover {
+background-color:blue;
+}
+QPushButton:pressed{
+background-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="multi_push">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>160</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:purple;
+color:white;
+border-style: outset;
+border-width:2px;
+border-radius:10px;
+border-color:black;
+font:bold 14px;
+padding:6px;
+}
+
+QPushButton:hover {
+background-color:blue;
+}
+QPushButton:pressed{
+background-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Multi window rendering</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>70</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font:bold 14px;</string>
+    </property>
+    <property name="text">
+     <string>Files saved</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nr_files_main">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>100</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;
+font:bold 14px;
+background-color:white;</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
